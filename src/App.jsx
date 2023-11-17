@@ -1,9 +1,21 @@
+import * as React from "react";
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
 
 function App() {
 
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <div>Hello world!</div>,
+    },
+  ]);
+
   return (
     <>
-      <h1>UAlumni frontend</h1>
+    <RouterProvider router={router} />
     </>
   )
 }
