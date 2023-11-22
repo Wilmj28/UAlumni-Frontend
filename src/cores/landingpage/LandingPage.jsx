@@ -1,11 +1,9 @@
 import NavBar from "../../components/Navbar";
-<<<<<<< Updated upstream
-import { Text, Stack, Box, Image, Flex} from '@chakra-ui/react';
-import { Button, ButtonGroup } from '@chakra-ui/react';
-import EgresadosFoto from '../../images/egresados.jpg';
-import EgresadosLanding from '../../images/egresadosLanding.jpg';
-import ReclutadoresLanding from '../../images/reclutadoreslanding.jpg';
-=======
+import { Text, Stack, Box, Image, Flex } from "@chakra-ui/react";
+import { Button, ButtonGroup } from "@chakra-ui/react";
+import EgresadosFoto from "../../images/egresados.jpg";
+import EgresadosLanding from "../../images/egresadosLanding.jpg";
+import ReclutadoresLanding from "../../images/reclutadoreslanding.jpg";
 import {
   Text,
   Stack,
@@ -19,16 +17,13 @@ import { Button } from "@chakra-ui/react";
 import EgresadosFoto from "../../images/egresados.jpg";
 import EgresadosLanding from "../../images/egresadosLanding.jpg";
 import ReclutadoresLanding from "../../images/reclutadoreslanding.jpg";
->>>>>>> Stashed changes
 import Footer from "../../components/Footer";
 
 function LandingPage() {
   return (
     <div>
       <NavBar />
-<<<<<<< Updated upstream
       <img src={EgresadosFoto} alt="Egresados" width="100%" height="auto" />
-=======
       <Box
         width="100%"
         height="100%"
@@ -91,7 +86,6 @@ function LandingPage() {
           </Box>
         </Box>
       </Box>
->>>>>>> Stashed changes
       <div
         style={{
           width: "100%",
@@ -260,9 +254,4 @@ function LandingPage() {
     </div>
   );
 }
-<<<<<<< Updated upstream
 export default LandingPage;
-=======
-
-export default LandingPage;
->>>>>>> Stashed changes
