@@ -1,17 +1,75 @@
 
 import NavBar from "../../components/Navbar";
 import { Text, Stack, Box, Image, Flex} from '@chakra-ui/react';
-import { Button, ButtonGroup } from '@chakra-ui/react';
+import { Button } from '@chakra-ui/react';
 import EgresadosFoto from '../../images/egresados.jpg';
 import EgresadosLanding from '../../images/egresadosLanding.jpg';
 import ReclutadoresLanding from '../../images/reclutadoreslanding.jpg';
 import Footer from "../../components/Footer";
 
 function LandingPage() {
+
+
   return (
     <div>
       <NavBar />
-      <img src={EgresadosFoto} alt="Egresados" width="100%" height="auto" />
+      <Box
+      width="100%"
+      height="100%"
+      display="flex"
+      justifyContent="center"
+      alignItems="center"
+
+    >
+     <Box
+  position="relative"
+  display="flex"
+  alignItems="center"
+  justifyContent="center"
+>
+  <Image src={EgresadosFoto} alt="Egresados" width="100%" height="auto" />
+  
+  <Box
+    position="absolute"
+    backgroundColor="rgba(255,255,255,0.8)"
+    boxShadow="0 0 0 1px #FFFFFF"
+    padding="8px"
+    backgroundClip="content-box"
+    width={["100%", "90%","70%", "45%"]}
+    // height={["90%", "90%","70%", "50%"]}
+    zIndex="2"
+  
+  >
+    <Text
+      fontSize={["lg","lg","xl","4xl"]}
+      color="black"
+      textAlign="center"
+      as="b"
+      paddingTop="15px"
+      marginTop="10px"
+      marginBottom="10px"
+      style={{
+        textDecoration: 'underline',
+        textDecorationColor: 'green',
+        display: 'flex',
+        justifyContent: 'center',
+      }}
+    >
+      UALUMNI
+    </Text>
+    <Text
+      fontSize={["sm","md","md","md"]}
+      color="black"
+      textAlign="center"
+      px="20px"
+      paddingBottom="40px"
+    >
+    UAlumni es una plataforma que te ayuda a encontrar el empleo ideal, de acuerdo a tus habilidades y experiencia.En UAlumni encontrarás ofertas de empleo de las mejores empresas del país, así como recursos para prepararte para tu búsqueda laboral.
+    </Text>
+  </Box>
+</Box> 
+
+    </Box>
       <div
         style={{
           width: "100%",
@@ -188,5 +246,6 @@ function LandingPage() {
       <Footer />
     </div>
   );
-}
+};
+
 export default LandingPage;
