@@ -1,6 +1,4 @@
 import NavBar from "../../components/Navbar";
-import { Text, Stack, Box, Image, Flex } from "@chakra-ui/react";
-import { Button, ButtonGroup } from "@chakra-ui/react";
 import EgresadosFoto from "../../images/egresados.jpg";
 import EgresadosLanding from "../../images/egresadosLanding.jpg";
 import ReclutadoresLanding from "../../images/reclutadoreslanding.jpg";
@@ -14,16 +12,12 @@ import {
   GridItem,
 } from "@chakra-ui/react";
 import { Button } from "@chakra-ui/react";
-import EgresadosFoto from "../../images/egresados.jpg";
-import EgresadosLanding from "../../images/egresadosLanding.jpg";
-import ReclutadoresLanding from "../../images/reclutadoreslanding.jpg";
 import Footer from "../../components/Footer";
 
 function LandingPage() {
   return (
     <div>
       <NavBar />
-      <img src={EgresadosFoto} alt="Egresados" width="100%" height="auto" />
       <Box
         width="100%"
         height="100%"
