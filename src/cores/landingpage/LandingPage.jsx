@@ -1,5 +1,5 @@
 import NavBar from "../../components/Navbar";
-import EgresadosFoto from "../../images/egresados.jpg";
+import EgresadosFoto from "../../images/egresados.jpeg";
 import EgresadosLanding from "../../images/egresadosLanding.jpg";
 import ReclutadoresLanding from "../../images/reclutadoreslanding.jpg";
 import {
